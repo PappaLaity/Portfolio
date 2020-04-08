@@ -1,0 +1,333 @@
+body , html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+}
+
+
+.footer{
+    clear: both;
+}
+/*.myself{
+    margin-top: 5%;
+}
+
+.myself_intro{
+    float: left;
+    width:50% ;
+    height: 50%;
+}
+
+.myself_picture{
+    width: 150px;
+    height: 215px;
+    border-radius: 1px;
+    position: absolute;
+    top: 10;left: 0;
+    background: url('../img/i6.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.myself_desc{
+    margin-left: 25%;
+    padding-top: 03%;
+}
+
+.myself_others{
+    width:50% ;
+    height: 50%;
+   position: absolute;
+    top:05;right:0;
+}*/
+
+
+/*                HomePage                      */
+
+.main_resume{
+    height: 400px;
+    padding: 1px 15px;
+}
+.resume_desc{
+    position: relative;
+}
+
+.resume_filiale{
+ position:absolute;
+ left: 0;
+}
+.resume_filiale p{
+    font-style: italic;
+    font-weight: 600;
+}
+.resume_domaines{
+    position:absolute;
+    right: 0;
+    height: 50%;
+}
+
+.resume_domaines h4 {
+    font-size: 18px;
+}
+
+.resume_domaines li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+
+
+.bar{
+    display: block;
+    border: 1px solid rgba(75, 53, 13,0.4);
+    border-radius: 4px;
+    height:10px;
+    width: 420px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+}
+
+
+.web{
+    display: block;
+    border: 1px solid rgba(75, 53, 13,0.4);
+    border-radius: 4px;
+    height: 9px;
+    background:rgb(105, 84, 69);
+    width: 85%;
+    animation: web 3s;
+}
+
+
+@keyframes web{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.mob{
+    display: block;
+    border: 1px solid rgba(75, 53, 13,0.4);
+    border-radius: 4px;
+    height: 9px;
+    background:rgb(105, 84, 69);
+    width: 59%;
+    animation: mob 3s;
+}
+
+@keyframes mob{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 59%;
+    }
+} 
+
+.ds{
+    display: block;
+    border: 1px solid rgba(75, 53, 13,0.4);
+    border-radius: 4px;
+    height: 9px;
+    background:rgb(105, 84, 69);
+    width: 50%;
+    animation: ds 3s;
+}
+
+@keyframes ds{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.iot{
+    display: block;
+    border: 1px solid rgba(75, 53, 13,0.4);
+    border-radius: 4px;
+    height: 9px;
+    background:rgb(105, 84, 69);
+    width: 32%;
+    animation: iot 3s;
+}
+
+@keyframes iot{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 32%;
+    }
+}
+
+.wid_item{
+    width: 24%;
+    height: 200px;
+    float: left;
+    margin-right: 2px;
+    padding: 1px;
+}
+.wid_item:hover{
+    border-color: black;
+    border-radius: 1px;
+}
+hr{
+    clear:both;
+}
+
+.tech_fram_item{
+    width: 12%;
+    height: 150px;
+    float: left;
+    margin-right: 2px;
+    padding: 1px;
+}
+
+
+.tech_fram_item img{
+    width: 85% ;
+    height:80%;
+}
+
+.tech_tools{
+    clear: both;
+}
+
+.tech_tools_item{
+    width: 12%;
+    height: 150px;
+    float: left;
+    margin-right: 2px;
+    padding: 1px; 
+}
+
+.colab-item{
+    width: 100%;
+    margin-right: 2px;
+    padding: 1px; 
+}
+
+
+/*          Fin - HomePage            */
+
+/*             Portfolio               */
+
+.desc_filiale{
+    width: 74%;
+    float: left;
+}
+.desc_filiale p {
+    margin-bottom: 0.3 rem;
+}
+.desc_pic{
+    width: 25%;
+    float: left;
+}
+.desc_pic img{
+    width: 50%;
+    height: 75%;
+    border-radius: 50px;
+}
+
+.desc_profession{
+    clear: both;
+    width: 67%;
+    margin-right: 10px;
+    float: left;
+}
+.desc_lang{
+    width: 30%;
+    float: left;
+    padding-right:15px;
+
+}
+
+
+.desc_lang span{
+    margin-right: 15px;
+    padding: 1px 5px;
+    /*width: 100px;
+    height: 10px;*/
+    border: solid 1px rgba(0, 0, 0,0.4);
+    border-radius: 50%;
+}
+
+.ok{
+    background-color:rgba(75, 53, 13,0.6);
+}
+
+.myself_others{
+    clear: both;
+}
+
+.myself_others_diplomes{
+    clear: both;
+}
+
+/*          Fin - Portfolio            */
+
+/*        Join Me               */
+
+.join{
+    height: 430px;
+    padding: 25px 25px;
+    border: 0px solid black;
+    border-radius: 3px;
+    background-color: #94867767;
+}
+.join_me{
+    border: 1px solid white;
+    padding: 25px 10px;
+    height: 380px;
+    background-color: rgb(240, 239, 239);
+    
+}
+
+.join_me_loc{
+    float: left;
+    width:50% ;
+    height: 50%;
+}
+.join_me_form{
+    width:50% ;
+    height: 50%;
+   float: right;
+/*   position: absolute;
+    top:05;right:0;*/
+}
+
+.join_me_form_submit{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background:#a5d4c0;
+    border-radius: 3px;
+}
+
+/*       Fin Join Me             */
+
+
+/*        Services               */
+
+.escape{
+    height: 125px;
+}
+
+/*        Fin Services           */

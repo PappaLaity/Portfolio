@@ -1,0 +1,86 @@
+.header{
+    /*height: 550px;*/
+    width: 100%;
+    /*background:rgb(62, 57, 107);*/
+}
+
+.header__texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+   /*background: url('../img/i5.jpg') center no-repeat;*/
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+.header__mask{
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    width: 100%;
+    height: 42px;
+    z-index: 10;
+}
+
+.header__navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;    
+    /*justify-content: center ;*/
+    /*justify-content: space-around ;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar--logo-title{
+    color: black;
+    font-size: 28px;
+
+}
+
+.header__navbar--menu-link{
+    margin-left: 10px;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 3px;
+
+}
+
+.header__navbar--menu-link:hover{
+    background-color: rgb(105, 84, 69);
+    color: white;
+    text-decoration-line: none;
+    border-block-end-color: black;
+}
+
+.header__slogan{
+    text-align: right;
+    margin-top: 85px;
+}
+
+.h__slogan--title{
+    color: #000;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.h__slogan--btn{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: grey;
+    border-radius: 3px;
+    float:right;
+
+}
+
+.h__slogan--btn:hover{
+    text-decoration-line: none;
+    background-color:rgb(105, 84, 69);
+    color:black;
+}
