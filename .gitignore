@@ -1,0 +1,12 @@
+Portfolio/node_modules
+Portfolio/public/hot
+Portfolio/public/storage
+Portfolio/storage/*.key
+Portfolio/vendor
+Portfolio/.env
+Portfolio/.env.backup
+Portfolio/.phpunit.result.cache
+Portfolio/Homestead.json
+Portfolio/Homestead.yaml
+Portfolio/npm-debug.log
+Portfolio/yarn-error.log

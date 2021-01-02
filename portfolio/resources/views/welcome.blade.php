@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -7,9 +7,9 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
-        <!-- Styles--> 
+        <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
@@ -62,7 +62,6 @@
                 margin-bottom: 30px;
             }
         </style>
-
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -82,72 +81,20 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Step by step
+                    Laravel
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
+                    <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
     </body>
 </html>
-<!--
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    @section('head')
-    <meta charset="UTF-8">
-    <meta name="csrf-token" content="csrf_token()">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href = "{{asset('css/app.css')}}">
-    <link rel="stylesheet" href = "{{asset('css/header.css')}}">
-    <script src = "{{asset('js/app.js')}}"></script>
-    <title>Papa laity Ndiaye</title>
-    @show
-</head>
-
-<body>
-    @section('header')
-    <div class="header">
-        <div class="header__texture"></div>
-        <div class="container">
-        @section('header__navbar')
-            <div class="header__navbar">
-                <div class="header__navbar--logo">
-                    <h1 class="header__navbar--logo-title">DI-SAU</h1>
-                </div>
-                <div class="header__navbar--menu">
-                    <a href="{{ url('/home') }}" class="header__navbar--menu-link"> <i></i> Accueil</a>
-                    <a href="/" class="header__navbar--menu-link"> <i></i> Portfolio</a>
-                    <a href="/" class="header__navbar--menu-link"> <i></i> Contact</a>
-                    <a href="/" class="header__navbar--menu-link"> <i></i> Login</a>
-                </div>
-            </div>
-        @show
-            <div class="header__slogan">
-                <h1 class="h__slogan--title"> DIWANE SOFT AUDIOVISUELLE</h1>
-                <br>
-                <ul>
-                    <li> <i></i> Full Stack Developper</li>
-                    <li><i></i> Software Integration</li>
-                    <li><i></i> Web & Mobile Product</li>
-                    <li><i></i> IA & IoT Research</li>
-                </ul>
-                <br><br>
-                <a href='https://laravel.com/docs' class="h__slogan--btn">Contactez Moi</a>
-                <a href='user' >Contactez Moi +</a>
-            </div>
-        </div>
-    </div>
-    @show
-</body>
-
-</html>-->

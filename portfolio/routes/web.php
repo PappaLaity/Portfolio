@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,53 +13,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Home Page
+Route::get('/','PageController@home');
+// Resume Page Skills,...
+Route::get('resume','PageController@resume');
+// Join me form 
+Route::get('contact','PageController@contact');
+// Send une notification  et Retour par mail
+Route::post('contact','PageController@contact');
+// Service Page ... All Project Tuto done by me
+Route::get('service','PageController@service');
+// Login Page ... not in homepage 
+Route::get('login','PageController@login');
+//Formulaire de connexion en tant que Admin
+//Route::post('admin', 'PageController@contact');
+Auth::routes();
 
-use GuzzleHttp\Middleware;
-use Illuminate\Support\Facades\Route;
-
-
-/*Route::get('/', function () {
-    return view('home');
-});*/
-/*
-Route::get('/user', function(){
-    return view('user',['user'=> 'Laity']);
-});*/
-
-Route::get('/user/{id?}', function($id = 'No data is passed'){
-    return view('user',['user'=> $id]);
-});
-
-Route::get('/','UserController@index');
-Route::get('/profil','UserController@profil');
-Route::get('/contact','UserController@join');
-Route::get('/login','UserController@login');
-Route::get('/services','UserController@services');
-Route::get('/db','adminController@checkDB');
-
-
-Route::redirect('/here','/');
-
-/*
-Route::get('salut/{name}', function($name){
-    return "Salut $name";
-});*/
-
-/*Route::get('salut/{name}-{id}', function ($name, $id) {
-    return "Salut Monsieur/Madame: $name - ID : $id";
-})->where('name', '[a-z0-9\-]+')
-    ->where('id', '[0-9]+');*/
-
-
-Route::get('salut/{slug}-{id}', ['as'=>'salut',function ($slug, $id) {
-    return "Link : " .route('salut',['slug'=>$slug, 'id'=>$id]);
-}]);
-
-
-/*Route::group(['prefix'=> 'admin', 'middleware'=> 'ip'], function(){
-
-    Route::get('salut/{name}', function($name){
-        return "Salut $name";
-    });
-
-});*/
+Route::get('/home', 'HomeController@index')->name('home');

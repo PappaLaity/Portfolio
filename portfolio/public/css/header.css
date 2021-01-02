@@ -32,6 +32,7 @@
     /*justify-content: space-around ;*/
     justify-content: space-between;
     align-items: center;
+/*    background-color: rgba(75, 53, 13,0.6)*/
 }
 
 .header__navbar--logo-title{
@@ -47,6 +48,7 @@
     text-decoration: none;
     font-size: 19px;
     border-radius: 3px;
+    border:solid 1px rgba(75, 53, 13,0.3);
 
 }
 

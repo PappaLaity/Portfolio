@@ -1,0 +1,908 @@
+.header {
+    /*height: 550px;*/
+    width: 100%;
+    /*background:rgb(62, 57, 107);*/
+}
+
+.header__texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background: url('../img/i5.jpg') center no-repeat;*/
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.header__mask {
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    width: 100%;
+    height: 42px;
+    z-index: 10;
+}
+
+.header__navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center ;*/
+    /*justify-content: space-around ;*/
+    justify-content: space-between;
+    align-items: center;
+    /*    background-color: rgba(75, 53, 13,0.6)*/
+}
+
+.header__navbar--logo-title {
+    color: black;
+    font-size: 28px;
+}
+
+.header__navbar--menu-link {
+    margin-left: 10px;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 3px;
+    border: solid 1px rgba(75, 53, 13, 0.3);
+}
+
+.header__navbar--menu-link:hover {
+    background-color: rgb(105, 84, 69);
+    color: white;
+    text-decoration-line: none;
+    border-block-end-color: black;
+}
+
+.header__slogan {
+    text-align: right;
+    margin-top: 85px;
+}
+
+.h__slogan--title {
+    color: #000;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.h__slogan--btn {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: grey;
+    border-radius: 3px;
+    float: right;
+}
+
+.h__slogan--btn:hover {
+    text-decoration-line: none;
+    background-color: rgb(105, 84, 69);
+    color: black;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    /*
+        background-color:rgba(229, 226, 226, 0.14);*/
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration-line: underline;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+}
+
+.footer {
+    background-color: grey;
+    opacity: 0.5;
+    padding: 10px;
+}
+
+.escape-footer {
+    clear: both;
+    height: 50px;
+}
+
+
+/*.myself{
+        margin-top: 5%;
+    }
+    
+    .myself_intro{
+        float: left;
+        width:50% ;
+        height: 50%;
+    }
+    
+    .myself_picture{
+        width: 150px;
+        height: 215px;
+        border-radius: 1px;
+        position: absolute;
+        top: 10;left: 0;
+        background: url('../img/i6.jpg') center no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+    
+    .myself_desc{
+        margin-left: 25%;
+        padding-top: 03%;
+    }
+    
+    .myself_others{
+        width:50% ;
+        height: 50%;
+       position: absolute;
+        top:05;right:0;
+    }*/
+
+
+/*                HomePage                      */
+
+.main_resume {
+    height: 530px;
+    padding: 1px 15px;
+}
+
+.resume_desc {
+    position: relative;
+}
+
+.resume_filiale {
+    position: absolute;
+    left: 0;
+}
+
+.resume_filiale p {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.resume_filiale_ref {
+    height: 60px;
+    width: 60px;
+}
+
+.resume_domaines {
+    position: absolute;
+    right: 0;
+    height: 50%;
+}
+
+.resume_domaines h4 {
+    font-size: 18px;
+}
+
+.resume_domaines li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.bar {
+    display: block;
+    border: 1px solid rgba(75, 53, 13, 0.4);
+    border-radius: 4px;
+    height: 10px;
+    width: 420px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.web {
+    display: block;
+    border: 1px solid rgba(75, 53, 13, 0.4);
+    border-radius: 4px;
+    height: 9px;
+    background: rgb(105, 84, 69);
+    width: 85%;
+    animation: web 3s;
+}
+
+@keyframes web {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.mob {
+    display: block;
+    border: 1px solid rgba(75, 53, 13, 0.4);
+    border-radius: 4px;
+    height: 9px;
+    background: rgb(105, 84, 69);
+    width: 59%;
+    animation: mob 3s;
+}
+
+@keyframes mob {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 59%;
+    }
+}
+
+.ds {
+    display: block;
+    border: 1px solid rgba(75, 53, 13, 0.4);
+    border-radius: 4px;
+    height: 9px;
+    background: rgb(105, 84, 69);
+    width: 50%;
+    animation: ds 3s;
+}
+
+@keyframes ds {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.iot {
+    display: block;
+    border: 1px solid rgba(75, 53, 13, 0.4);
+    border-radius: 4px;
+    height: 9px;
+    background: rgb(105, 84, 69);
+    width: 32%;
+    animation: iot 3s;
+}
+
+@keyframes iot {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 32%;
+    }
+}
+
+.wid_item {
+    width: 24%;
+    height: 200px;
+    float: left;
+    margin-right: 2px;
+    padding: 1px;
+}
+
+.wid_item_ref {
+    height: 50px;
+    width: 50px;
+    transform: translateY(15px);
+}
+
+.wid_item_name {
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+.wid_item:hover {
+    border-color: black;
+    border-radius: 1px;
+}
+
+hr {
+    clear: both;
+}
+
+.tech_fram_item {
+    width: 12%;
+    height: 150px;
+    float: left;
+    margin-right: 2px;
+    padding: 1px;
+}
+
+.tech_fram_item img {
+    width: 55%;
+    height: 60%;
+}
+
+.tech_tools {
+    clear: both;
+    /*
+        background-color: white;
+        height: 250px;*/
+}
+
+.tech_tools_item {
+    width: 15%;
+    height: 200px;
+    float: left;
+    margin-right: 2px;
+    padding: 1px;
+}
+
+.tech_tools_item img {
+    width: 55%;
+    height: 60%;
+}
+
+.colab-item {
+    width: 100%;
+    margin-right: 2px;
+    padding: 1px;
+}
+
+
+/*          Fin - HomePage            */
+
+
+/*             Portfolio               */
+
+.desc_filiale {
+    width: 74%;
+    float: left;
+}
+
+.desc_filiale p {
+    margin-bottom: 0.3 rem;
+}
+
+.desc_pic {
+    width: 25%;
+    float: left;
+}
+
+.desc_pic img {
+    width: 50%;
+    height: 75%;
+    border-radius: 50px;
+}
+
+.desc_profession {
+    clear: both;
+    width: 67%;
+    margin-right: 10px;
+    float: left;
+}
+
+.desc_lang {
+    width: 30%;
+    float: left;
+    padding-right: 15px;
+}
+
+.desc_lang li span {
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 1px 5px;
+    width: 10px;
+    height: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.ok {
+    background-color: rgba(75, 53, 13, 0.6);
+}
+
+.myself_others {
+    clear: both;
+    padding-top: 75px;
+}
+
+.myself_others_diplomes {
+    clear: both;
+}
+
+
+/*          Fin - Portfolio            */
+
+
+/*        Join Me               */
+
+.join {
+    height: 430px;
+    padding: 25px 25px;
+    border: 0px solid black;
+    border-radius: 3px;
+    background-color: #94867767;
+}
+
+.join_me {
+    border: 1px solid white;
+    padding: 25px 10px;
+    height: 380px;
+    background-color: rgb(240, 239, 239);
+}
+
+.join_me_loc {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+.join_me_form {
+    width: 50%;
+    height: 50%;
+    float: right;
+    /*   position: absolute;
+        top:05;right:0;*/
+}
+
+.join_me_form_submit {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #a5d4c0;
+    border-radius: 3px;
+}
+
+
+/*       Fin Join Me             */
+
+
+/*        Services               */
+
+.escape {
+    height: 125px;
+}
+
+
+/*        Fin Services           */
+
+@media screen and (max-width:995px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+    }
+    h1 {}
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .header__texture {
+        width: 990px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.4;
+    }
+    .header__navbar {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__navbar--logo {
+        width: 13%;
+    }
+    .header__navbar--logo-title {
+        font-size: 25px;
+    }
+    .header__navbar--menu {
+        justify-content: space-beetween;
+    }
+    .header__navbar--menu-link {
+        text-decoration: none;
+        display: inline-table;
+        color: black;
+        padding: 15px 5px;
+        border: solid 1px rgba(75, 53, 13, 0.3);
+        border-radius: 3px;
+    }
+    /*
+    .header__navbar--menu-link:hover{
+        background-color:  rgba(75, 53, 13,1);
+        color: white;
+    }*/
+    .resume_domaines li {
+        list-style: none;
+        padding: 5px 0;
+    }
+}
+
+
+/* 782 px;*/
+
+@media screen and (max-width:782px) {
+    .header__texture {
+        width: 782px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.4;
+    }
+    .header__navbar {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__navbar--logo {
+        width: 13%;
+    }
+    .header__navbar--logo-title {
+        font-size: 17px;
+    }
+    .header__navbar--menu {
+        justify-content: space-beetween;
+    }
+    .header__navbar--menu-link {
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-table;
+        color: black;
+        padding: 15px 3px;
+        border: solid 1px rgba(75, 53, 13, 0.3);
+        border-radius: 3px;
+    }
+    .header__navbar--menu-link:hover {
+        background-color: rgba(75, 53, 13, 1);
+        color: white;
+    }
+    .bar {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 8px;
+        width: 220px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .web {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 6px;
+        background: rgb(105, 84, 69);
+        width: 85%;
+        animation: web 3s;
+    }
+    @keyframes web {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 85%;
+        }
+    }
+    .mob {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 6px;
+        background: rgb(105, 84, 69);
+        width: 59%;
+        animation: mob 3s;
+    }
+    @keyframes mob {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 59%;
+        }
+    }
+    .ds {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 6px;
+        background: rgb(105, 84, 69);
+        width: 50%;
+        animation: ds 3s;
+    }
+    @keyframes ds {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+    .iot {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 6px;
+        background: rgb(105, 84, 69);
+        width: 32%;
+        animation: iot 3s;
+    }
+    @keyframes iot {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 32%;
+        }
+    }
+}
+
+
+/* 603*/
+
+@media screen and (max-width:603px) {
+    .header__texture {
+        width: 603px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.4;
+    }
+    .header__navbar {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__navbar--logo {
+        width: 10%;
+    }
+    .header__navbar--logo-title {
+        font-size: 14px;
+    }
+    .header__navbar--menu {
+        justify-content: space-beetween;
+    }
+    .header__navbar--menu-link {
+        font-size: 11px;
+        text-decoration: none;
+        display: inline-table;
+        color: black;
+        padding: 15px 2px;
+        border: solid 1px rgba(75, 53, 13, 0.3);
+        border-radius: 3px;
+    }
+    .header__navbar--menu-link:hover {
+        background-color: rgba(75, 53, 13, 1);
+        color: white;
+    }
+    .bar {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 4px;
+        width: 220px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .web {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 85%;
+        animation: web 3s;
+    }
+    @keyframes web {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 85%;
+        }
+    }
+    .mob {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 59%;
+        animation: mob 3s;
+    }
+    @keyframes mob {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 59%;
+        }
+    }
+    .ds {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 50%;
+        animation: ds 3s;
+    }
+    @keyframes ds {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+    .iot {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 32%;
+        animation: iot 3s;
+    }
+    @keyframes iot {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 32%;
+        }
+    }
+}
+
+@media screen and (max-width:580px) {
+    .header__texture {
+        width: 580px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.4;
+    }
+    .header__navbar {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__navbar--logo {
+        width: 10%;
+    }
+    .header__navbar--logo-title {
+        font-size: 11px;
+    }
+    .header__navbar--menu {
+        justify-content: space-beetween;
+    }
+    .header__navbar--menu-link {
+        font-size: 9px;
+        text-decoration: none;
+        display: inline-table;
+        color: black;
+        padding: 8px 2px;
+        border: solid 1px rgba(75, 53, 13, 0.3);
+        border-radius: 3px;
+    }
+    .header__navbar--menu-link:hover {
+        background-color: rgba(75, 53, 13, 1);
+        color: white;
+    }
+    .main_resume {
+        height: 800px;
+    }
+    .resume_filiale {
+        position: static;
+        width: 100%;
+    }
+    .resume_domaines {
+        clear: both;
+        float: left;
+    }
+    .wid_item {
+        width: 48%;
+    }
+    .bar {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 4px;
+        width: 220px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .web {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 85%;
+        animation: web 3s;
+    }
+    @keyframes web {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 85%;
+        }
+    }
+    .mob {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 59%;
+        animation: mob 3s;
+    }
+    @keyframes mob {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 59%;
+        }
+    }
+    .ds {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 50%;
+        animation: ds 3s;
+    }
+    @keyframes ds {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+    .iot {
+        display: block;
+        border: 1px solid rgba(75, 53, 13, 0.4);
+        border-radius: 4px;
+        height: 3px;
+        background: rgb(105, 84, 69);
+        width: 32%;
+        animation: iot 3s;
+    }
+    @keyframes iot {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 32%;
+        }
+    }
+}
