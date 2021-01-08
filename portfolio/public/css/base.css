@@ -84,6 +84,12 @@ h6 {
     position: relative;
 }
 
+.resume_desc_title {
+    text-align: center;
+    color: #41240567;
+    font-style: italic;
+}
+
 .resume_filiale {
     position: absolute;
     left: 0;
@@ -92,6 +98,11 @@ h6 {
 .resume_filiale p {
     font-style: italic;
     font-weight: 600;
+}
+
+.resume_filiale_ref {
+    height: 40px;
+    width: 40px;
 }
 
 .resume_domaines {
@@ -111,7 +122,7 @@ h6 {
 
 .img_profil {
     height: 200px;
-    width: 150px;
+    width: 200px;
 }
 
 .bar {
@@ -205,6 +216,17 @@ h6 {
     float: left;
     margin-right: 2px;
     padding: 1px;
+}
+
+.wid_item_ref {
+    height: 40px;
+    width: 40px;
+    /* //    transform: translateY(15px); */
+}
+
+.wid_item_name {
+    font-size: 20px;
+    text-decoration-line: underline;
 }
 
 .wid_item:hover {
