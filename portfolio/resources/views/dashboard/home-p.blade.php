@@ -18,7 +18,7 @@
     </div>
 
     <div class="resume_domaines">
-        <img src="" alt="">
+        <img class="img_profil" src="{{asset('images/pp3.jpeg')}}" alt="Papa laity Ndiaye Profil photo">
         <a href="https://www.linkedin.com/in/pappalaity/">linkedin<img class="resume_filiale_ref" src="public/img/icon link/linkedIn.png" alt=""></a>
         <a href="https://github.com/PappaLaity">github<img class="resume_filiale_ref" src="public/img/icon link/github.png" alt=""></a>
         <a href="https://twitter.com/pappalaity">twitter<img class="resume_filiale_ref" src="public/img/icon link/twitterl.png" alt=""></a>
