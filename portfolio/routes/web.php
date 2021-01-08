@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +15,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Home Page
-Route::get('/','PageController@home');
+Route::get('/', 'PageController@home');
 // Resume Page Skills,...
-Route::get('resume','PageController@resume');
+Route::get('resume', 'PageController@resume');
 // Join me form 
-Route::get('contact','PageController@contact');
+Route::get('contact', 'PageController@contact');
 // Send une notification  et Retour par mail
-Route::post('contact','PageController@contact');
+Route::post('contact', 'PageController@contact');
 // Service Page ... All Project Tuto done by me
-Route::get('service','PageController@service');
+Route::get('service', 'PageController@service');
 // Login Page ... not in homepage 
-Route::get('login','PageController@login');
+Route::get('login', 'PageController@login');
 //Formulaire de connexion en tant que Admin
 //Route::post('admin', 'PageController@contact');
 Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
