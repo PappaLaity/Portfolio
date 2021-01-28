@@ -25,7 +25,7 @@ Route::post('contact', 'PageController@contact');
 // Service Page ... All Project Tuto done by me
 Route::get('service', 'PageController@service');
 // Login Page ... not in homepage 
-Route::get('login', 'PageController@login');
+//Route::get('login', 'PageController@login');
 //Formulaire de connexion en tant que Admin
 //Route::post('admin', 'PageController@contact');
 Auth::routes();
