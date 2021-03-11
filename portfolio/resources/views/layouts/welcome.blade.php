@@ -77,7 +77,7 @@
 </head>
 
 <body>
-    <div id="home">
+    <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <a class="navbar-brand" href="{{ url('/welcome') }}">
                 Pappalaity
@@ -96,15 +96,6 @@
                 </ul>
             </div>
         </nav>
-        <!--         <div class="flex-center position-ref full-height">
-            <div class="top-right links">
-                <a href="#" class="pr-2">About</a>
-                <a href="#" class="pr-2">Resume</a>
-                <a href="#" class="pr-2">Services & Projects</a>
-                <a href="#" class="pr-2">Contact</a>
-            </div>
-
-        </div> -->
         <div class="container">
             <main class="py-4">
                 @yield('content')

@@ -45,6 +45,8 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @guest
+                    @else
                     <ul class="navbar-nav ">
                         <li class="pr-2 links"> <a href="">Formations</a></li>
                         <li class="pr-2 links"> <a href="">Skills</a></li>
@@ -52,6 +54,7 @@
                         <li class="pr-2 links"> <a href="">Messages</a></li>
                         <li class="pr-2 links"> <a href="">Resume</a></li>
                     </ul>
+                    @endguest
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
